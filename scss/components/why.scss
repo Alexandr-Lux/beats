@@ -1,0 +1,48 @@
+.why{
+	text-align: center;
+	&:after{
+		content: url('../images/decor/red-triangle.png');
+		position: absolute;
+		bottom: 0;
+		left: 10%;
+		transform: translateY(50%);
+	}
+}
+
+.why__title{
+	margin-bottom: 17px;
+}
+
+.why__subtitle{
+	margin-bottom: 62px;
+	padding: 0 20%;
+}
+
+.why__list{
+	display: flex;
+}
+
+.why__item{
+	padding: 0 3%;
+	flex: 1;
+	position: relative;
+
+	&:before{
+		content: url('../images/why/decor.png');
+		position: absolute;
+		top: 50px;
+		right: 0;
+		transform: translateX(50%);
+	}
+
+	&:first-child{
+		padding-left: 0;
+	}
+
+	&:last-child{
+		padding-right: 0;
+		&:before{
+			display: none;
+		}
+	}
+}

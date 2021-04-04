@@ -1,0 +1,123 @@
+.form{
+	display: flex;
+}
+
+.form__big-col{
+	width: 50%;
+	margin-right: 27px;
+
+	&:last-child{
+		margin-right: 0;
+	}
+}
+
+.form__row{
+	display: flex;
+}
+
+.form__col{
+	flex: 1;
+	margin-bottom: 11px;
+}
+
+.form__col+.form__col{
+	margin-left: 17px;
+}
+
+.form__input-name{
+	margin-bottom: 6px;
+}
+
+.form__input{
+	display: block;
+	width: 100%;
+	height: 58px;
+	padding-left: 12px;
+	border-radius: 4px;
+	border: 3px solid transparent;
+	font-family: "open sans", serif;
+	&:focus{
+		border-color: $red;
+	}
+	&_center{
+		padding-left: 0;
+		text-align: center;
+	}
+	&_textarea{
+		height: 152px;
+		padding-top: 15px;
+		margin-bottom: 27px;
+		resize: none;
+	}
+}
+
+.form__controls{
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 18px;
+}
+
+.form__controls-label{
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	margin-right: 15px;
+	user-select: none;
+	&_checkbox {
+		.form__controls-elem{
+			border-radius: 4px;
+
+			&:before{
+				background: url('../images/form/check.svg') center center / 100% no-repeat;
+				border-radius: 0;
+			}
+		}
+	}
+}
+
+.form__controls-input{
+	display: none;
+
+	&:checked ~ .form__controls-elem{
+		&:before{
+			display: block;
+		}
+	}
+}
+
+.form__controls-elem{
+	width: 26px;
+	height: 26px;
+	position: relative;
+	background-color: $white;
+	border-radius: 50%;
+	margin-right: 10px;
+
+	&:before{
+		content: "";
+		display: none;
+		position: absolute;
+		width: 13px;
+		height: 13px;
+		background-color: $red;
+		border-radius: 50%;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 4;
+	}
+}
+
+.form__btn{
+	margin-top: 46px;
+}
+
+.form__btn-reset{
+	background-color: transparent;
+	color: $white;
+	margin-left: 13px;
+	transition: color 0.3s;
+	&:hover{
+		color: $darkred;
+	}
+}

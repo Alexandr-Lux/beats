@@ -1,0 +1,18 @@
+.menu__list{
+	display: flex;
+	font-size: 18px;
+	font-family: 'Alegreya Sans', sans-serif;
+}
+
+.menu__item{
+	margin-right: 27.5px;
+	transition: transform 0.3s;
+
+	&:last-child{
+		margin-right: 0;
+	}
+
+	&:hover{
+		transform: translateY(-4px);
+	}
+}

@@ -1,0 +1,14 @@
+.footer__container{
+	min-width: 1100px;
+	padding: 0 54px 0 86px;
+}
+
+.footer-body{
+	height: 85px;
+	font-size: 18px;
+	line-height: 1.5;
+	color: $black;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}

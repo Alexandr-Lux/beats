@@ -1,0 +1,58 @@
+//==========ШРИФТЫ==========
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&family=Open+Sans&family=Play:wght@400;700&display=swap');
+
+//==========NORMALIZE==========
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css');
+
+//==========ЦВЕТА==========
+$black:#292929;
+$grey:#666666;
+$white:#ffffff;
+$red:#E01F3D;
+$darkred:#CA1B36;
+
+//==========ПЕРЕМЕННЫЕ==========
+$minwidth:320px;
+$container:970;
+$fz:16px;
+$fontfamily: Play, sans-serif;
+$color:$grey;
+$bgc:$white;
+$z-fixed:100;
+
+//==========ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ==========
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+address{font-style:inherit;}
+aside,nav,footer,header,section{display: block;}
+html,body{height: 100%;width: 100%;min-width: $minwidth;color:$color;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+body{background: $bgc;font-size: 100%;line-height: 1.2;font-size: $fz;font-family: $fontfamily;-ms-text-size-adjust: 100%;-moz-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;}
+input,button,textarea{font-family: $fontfamily;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;color:inherit;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{display: block;max-width: 100%;}
+h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
+
+//==========СТИЛИ==========
+.wrapper{
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.container{
+	max-width:$container+px;
+	margin: 0 auto;
+	width: 100%;
+	padding: 0 15px;
+}
+
+
+

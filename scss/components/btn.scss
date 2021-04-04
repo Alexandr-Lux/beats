@@ -1,0 +1,27 @@
+.btn{
+	display: inline-block;
+	padding: 21px 41px;
+	text-transform: uppercase;
+	font-weight: 700;
+	background: $red;
+	border-radius: 100px;
+	color: $white;
+	transition: color 0.3s, background-color 0.3s;
+
+	&:visited{
+		color: $white;
+	}
+
+	&:hover{
+		background: $white;
+		color: $red;
+	}
+
+	&_color_darkred{
+		background-color: $darkred;
+		&:hover{
+			background: $white;
+			color: $darkred;
+		}
+	}
+}

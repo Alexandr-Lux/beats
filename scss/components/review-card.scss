@@ -1,0 +1,41 @@
+.review-card{
+	padding: 42px;
+	display: flex;
+	background-color: #F8FAF9;
+	align-items: center;
+}
+
+.review-card__avatar{
+	margin-right: 40px;
+	overflow: hidden;
+	width: 253px;
+	height: 264px;
+
+	& img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+.review-card__content{
+	flex: 1;
+}
+
+.review-card__title{
+	font-size: 24px;
+	font-weight: 700;
+	margin-bottom: 27px;
+	color: $black;
+}
+
+.review-card__text{
+	margin-bottom: 38px;
+	padding-right: 15%;
+}
+
+.review-card__author{
+	font-weight: 700;
+	font-size: 18px;
+	color: $black;
+}

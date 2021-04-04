@@ -1,0 +1,17 @@
+.team{
+	padding: 73px 0 51px;
+}
+
+.team__title{
+	margin-bottom: 53px;
+}
+
+.team__list{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -20px;
+}
+
+.team__item{
+	width: 25%;
+}

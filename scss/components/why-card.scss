@@ -1,0 +1,24 @@
+.why-card{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.why-card__image{
+	width: 128px;
+	height: 128px;
+	border-radius: 50%;
+	background-color: #F2F5F4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 24px;
+}
+
+.why-card__title{
+	font-size: 24px;
+	font-weight: 700;
+	margin-bottom: 7px;
+	color: $black;
+}

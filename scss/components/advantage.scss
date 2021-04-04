@@ -1,0 +1,19 @@
+.advantage__list{
+	display: flex;
+	align-items: center;
+}
+
+.advantage__item{
+	display: flex;
+	align-items: center;
+}
+
+.advantage__icon{
+	margin-right: 11px;
+	width: 41px;
+	height: 41px;
+}
+
+.advantage__text{
+	max-width: 122px;
+}

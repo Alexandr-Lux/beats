@@ -1,0 +1,45 @@
+.hero{
+	background-color: #f5f5f5;
+	min-height: 650px;
+	height: 100vh;
+	display: flex;
+	padding: 24px 0 70px;
+	color: $black;
+	position: relative;
+	&:after{
+		content: url('../images/decor/Rectangle-45.png');
+		position: absolute;
+		bottom: 0;
+		right: 10%;
+		transform: translateY(50%);
+	}
+}
+
+.hero__container{
+	display: flex;
+	padding: 0 27.5px;
+	flex-direction: column;
+	justify-content: space-between;
+	flex: 1;
+	background: url('../images/hero/hero.png') center right / 50% auto no-repeat;
+}
+
+.hero__title-section{
+	max-width: 40%;
+	line-height: 1.1;
+}
+
+.hero__title{
+	margin-bottom: 22px;
+	text-align: left;
+}
+
+.hero__subtitle{
+	padding-right: 10%;
+	font-size: 21px;
+	margin-bottom: 36px;
+	font-family: 'Alegreya Sans', sans-serif;
+	line-height: 1.2;
+}
+
+
