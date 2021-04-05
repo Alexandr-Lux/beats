@@ -71,6 +71,9 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: inherit;
   font-size: inherit; }
 
+cite {
+  font-style: normal; }
+
 .wrapper {
   min-height: 100%;
   overflow: hidden;
@@ -257,14 +260,21 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+  .advantage__item:first-child .advantage__content {
+    background-image: url("../images/hero/ear.svg"); }
+  .advantage__item:last-child .advantage__content {
+    background-image: url("../images/hero/plug.svg"); }
 
 .advantage__icon {
   margin-right: 11px;
   width: 41px;
   height: 41px; }
 
-.advantage__text {
-  max-width: 122px; }
+.advantage__content {
+  max-width: 166px;
+  min-height: 41px;
+  padding-left: 52px;
+  background: url("../images/hero/battery.svg") left center/41px 41px no-repeat; }
 
 .why {
   text-align: center; }
@@ -329,7 +339,6 @@ h1, h2, h3, h4, h5, h6 {
   width: 128px;
   height: 128px;
   border-radius: 50%;
-  background-color: #F2F5F4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -340,12 +349,142 @@ h1, h2, h3, h4, h5, h6 {
   -ms-flex-align: center;
   align-items: center;
   margin-bottom: 24px; }
+  .why-card__image_battery {
+    background: #F2F5F4 url("../images/why/battery.svg") center center/68px 68px no-repeat; }
+  .why-card__image_sound {
+    background: #F2F5F4 url("../images/why/sound.svg") center center/68px 68px no-repeat; }
+  .why-card__image_charge {
+    background: #F2F5F4 url("../images/why/charge.svg") center center/68px 68px no-repeat; }
 
 .why-card__title {
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 7px;
   color: #292929; }
+
+.shop {
+  padding: 66px 61px 124px;
+  background-color: #F8FAF9; }
+
+.shop-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.shop-card__body {
+  margin-left: 60px; }
+
+.shop-card__parameter-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 91px;
+  height: 91px;
+  background-color: #9a9a9a;
+  border-radius: 4px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 25px; }
+
+.shop-card__icon {
+  width: 42px;
+  height: 42px; }
+
+.shop-card__title {
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #292929;
+  max-width: 450px;
+  margin-bottom: 24px; }
+
+.shop-card__text {
+  margin-bottom: 27px; }
+
+.shop-card__parameter-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 24px; }
+
+.shop-card__parameter-item {
+  margin-right: 86px; }
+  .shop-card__parameter-item:last-child {
+    margin-right: 0; }
+
+.shop-card__prop-value {
+  font-size: 18px;
+  font-weight: 700;
+  color: #292929; }
+
+.shop-card__buy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.shop-card__price {
+  font-size: 36px;
+  color: #292929;
+  margin-right: 13px; }
+
+.team {
+  padding: 73px 0 51px; }
+
+.team__title {
+  margin-bottom: 53px; }
+
+.team__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -20px; }
+
+.team__item {
+  width: 25%; }
+
+.team-card {
+  padding: 0 20px; }
+
+.team-card__photo {
+  margin-bottom: 25px; }
+
+.shop-card__name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #292929;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .shop-card__name:after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    border: 6px solid transparent;
+    border-top: 9px solid #E01F3D;
+    border-bottom: none;
+    margin-left: 5px; }
+
+.colors {
+  min-height: 650px; }
 
 .reviews:after {
   content: url("../images/decor/circle.png");
