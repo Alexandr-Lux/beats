@@ -9,11 +9,20 @@
 	width: 128px;
 	height: 128px;
 	border-radius: 50%;
-	background-color: #F2F5F4;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 24px;
+	
+	&_battery{
+		background: #F2F5F4 url('../images/why/battery.svg') center center / 68px 68px no-repeat;
+	}
+	&_sound{
+		background: #F2F5F4 url('../images/why/sound.svg') center center / 68px 68px no-repeat;
+	}
+	&_charge{
+		background: #F2F5F4 url('../images/why/charge.svg') center center / 68px 68px no-repeat;
+	}
 }
 
 .why-card__title{

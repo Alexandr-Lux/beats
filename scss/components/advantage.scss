@@ -6,6 +6,18 @@
 .advantage__item{
 	display: flex;
 	align-items: center;
+	&:first-child{
+		.advantage__content{
+			background-image: url('../images/hero/ear.svg');
+		}
+	}
+
+	&:last-child{
+		.advantage__content{
+			background-image: url('../images/hero/plug.svg');
+		}
+	}
+
 }
 
 .advantage__icon{
@@ -14,6 +26,9 @@
 	height: 41px;
 }
 
-.advantage__text{
-	max-width: 122px;
+.advantage__content{
+	max-width: 166px;
+	min-height: 41px;
+	padding-left: 52px;
+	background: url("../images/hero/battery.svg") left center / 41px 41px no-repeat;
 }
