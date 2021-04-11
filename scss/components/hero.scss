@@ -1,9 +1,8 @@
 .hero{
 	background-color: #f5f5f5;
-	min-height: 650px;
-	height: 100vh;
+	min-height: 100vh;
 	display: flex;
-	padding: 24px 0 70px;
+	padding: rem(24px) 0 rem(65px);
 	color: $black;
 	position: relative;
 	&:after{
@@ -17,29 +16,79 @@
 
 .hero__container{
 	display: flex;
-	padding: 0 27.5px;
+	padding: 0 rem(27.5px);
 	flex-direction: column;
 	justify-content: space-between;
 	flex: 1;
 	background: url('../images/hero/hero.png') center right / 50% auto no-repeat;
+	@include tab {
+		background: none;
+	}
+	@include mob {
+		padding: 0 remmob(10px);
+	}
 }
 
 .hero__title-section{
 	max-width: 40%;
 	line-height: 1.1;
+	@include tab {
+		display: inline-flex;
+		flex-direction: column;
+		max-width: 95%;
+		align-self: center;
+		flex: 1;
+		justify-content: center;
+		align-items: center;
+		&:before {
+			content: "";
+			background: url('../../images/hero/hero.png') center / contain no-repeat;
+			display: block;
+			width: 323px;
+			height: 323px;
+			margin-bottom: 64px;
+		}
+	}
+	@include mob {
+		&:before {
+			display: block;
+			width: 75vw;
+			height: 75vw;
+			margin-bottom: 49px;
+		}
+	}
 }
 
 .hero__title{
-	margin-bottom: 22px;
+	margin-bottom: rem(22px);
 	text-align: left;
+	@include tab {
+		text-align: center;
+		padding: 0 5%;
+	}
 }
 
 .hero__subtitle{
 	padding-right: 10%;
-	font-size: 21px;
-	margin-bottom: 36px;
+	font-size: rem(21px);
+	margin-bottom: 32px;
 	font-family: 'Alegreya Sans', sans-serif;
 	line-height: 1.2;
+	@include tab {
+		padding: 0 20%;
+		text-align: center;
+		margin-bottom: rem(23px);
+	}
+	@include mob {
+		padding: 0 10%;
+		font-size: remmob(18px);
+	}
+}
+
+.hero__icon-section{
+	@include tab {
+		display: none;
+	}
 }
 
 

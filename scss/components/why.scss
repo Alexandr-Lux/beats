@@ -1,5 +1,4 @@
 .why{
-	text-align: center;
 	&:after{
 		content: url('../images/decor/red-triangle.png');
 		position: absolute;
@@ -11,15 +10,31 @@
 
 .why__title{
 	margin-bottom: 17px;
+
+	@include tab {
+		margin-bottom: rem(11px);
+	}
 }
 
 .why__subtitle{
-	margin-bottom: 62px;
+	margin-bottom: rem(61px);
+	text-align: center;
 	padding: 0 20%;
+	@include tab {
+		padding: 0 10%;
+		margin-bottom: rem(52px);
+	}
+	@include mob {
+		padding: 0 5%;
+		font-size: remmob(16px);
+	}
 }
 
 .why__list{
 	display: flex;
+	@include mob {
+		flex-direction: column;
+	}
 }
 
 .why__item{
@@ -33,6 +48,9 @@
 		top: 50px;
 		right: 0;
 		transform: translateX(50%);
+		@include tab {
+			display: none;
+		}
 	}
 
 	&:first-child{
@@ -43,6 +61,18 @@
 		padding-right: 0;
 		&:before{
 			display: none;
+		}
+	}
+
+	@include tab {
+		padding: 0 1%;
+	}
+
+	@include mob {
+		padding: 0;
+		margin-bottom: 38px;
+		&:last-child {
+			margin-bottom: 0;
 		}
 	}
 }

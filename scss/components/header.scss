@@ -1,11 +1,17 @@
 .header{
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-start;
 }
 
 .header__logo{
-	display: block;
 	width: 40px;
 	height: 40px;
+}
+
+.header__phone-number.phone-number{
+	padding-top: 8px;
+	@include tab {
+		display: none;
+	}
 }

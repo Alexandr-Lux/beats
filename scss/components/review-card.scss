@@ -3,6 +3,15 @@
 	display: flex;
 	background-color: #F8FAF9;
 	align-items: center;
+
+	@include tab {
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		padding: rem(56px) rem(24px) rem(45px);
+		width: 95%;
+		margin: 0 auto;
+	}
 }
 
 .review-card__avatar{
@@ -16,6 +25,12 @@
 		height: 100%;
 		object-fit: cover;
 	}
+
+	@include tab {
+		margin: 0 0 rem(32px) 0;
+		width: 130px;
+		height: 130px;
+	}
 }
 
 .review-card__content{
@@ -27,11 +42,22 @@
 	font-weight: 700;
 	margin-bottom: 27px;
 	color: $black;
+	@include tab {
+		margin-bottom: rem(16px);
+	}
 }
 
 .review-card__text{
 	margin-bottom: 38px;
 	padding-right: 15%;
+	@include tab {
+		padding-right: 0;
+		margin-bottom: rem(16px);
+	}
+	@include mob {
+		font-size: remmob(16px);
+		margin-bottom: remmob(12px);
+	}
 }
 
 .review-card__author{

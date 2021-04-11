@@ -1,9 +1,12 @@
 .title{
-	font-size: 48px;
+	font-size: rem(48px);
 	font-weight: 700;
 	text-transform: uppercase;
 	color: $black;
 	text-align: center;
+	@include mob {
+		font-size: remmob(32px);
+	}
 }
 
 .title_color_w{

@@ -25,6 +25,10 @@
 	display: block;
 	position: relative;
 
+	@include tab {
+		display: none;
+	}
+
 	&:before{
 		content: "";
 		display: block;

@@ -2,7 +2,18 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-between;
+	height: 100%;
+	@include mob {
+		flex-direction: row;
+	}
+}
+
+.why-card__body{
+	flex: 1;
+	text-align: center;
+	@include mob {
+		text-align: left;
+	}
 }
 
 .why-card__image{
@@ -13,21 +24,22 @@
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 24px;
-	
-	&_battery{
-		background: #F2F5F4 url('../images/why/battery.svg') center center / 68px 68px no-repeat;
+	background: #F2F5F4;
+
+	@include mob {
+		margin: 0 12px 0 0;
 	}
-	&_sound{
-		background: #F2F5F4 url('../images/why/sound.svg') center center / 68px 68px no-repeat;
-	}
-	&_charge{
-		background: #F2F5F4 url('../images/why/charge.svg') center center / 68px 68px no-repeat;
-	}
+}
+
+.why-card__icon{
+	width: 68px;
+	height: 68px;
+	fill: $black;
 }
 
 .why-card__title{
 	font-size: 24px;
 	font-weight: 700;
-	margin-bottom: 7px;
+	margin-bottom: rem(7px);
 	color: $black;
 }

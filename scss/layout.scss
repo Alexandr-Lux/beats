@@ -13,12 +13,23 @@ $darkred:#CA1B36;
 
 //==========ПЕРЕМЕННЫЕ==========
 $minwidth:320px;
-$container:970;
-$fz:16px;
+$container:972px;
+$tab:768px;
+$mob:480px;
 $fontfamily: Play, sans-serif;
 $color:$grey;
+$fz:16px;
 $bgc:$white;
 $z-fixed:100;
+$lh:1.2;
+
+//==========ФУНКЦИИ==========
+@function rem ($px) {@return $px/$fz + 0rem;}
+@function remmob ($pxm) {@return $pxm/($fz - 2px) + 0rem;}
+
+//==========МИКСИНЫ==========
+@mixin tab {@media (max-width: $tab) {@content;}}
+@mixin mob {@media (max-width: $mob) {@content;}}
 
 //==========ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ==========
 *{padding: 0;margin: 0;border: 0;}
@@ -26,9 +37,9 @@ $z-fixed:100;
 :focus,:active{outline: none;}
 a:focus,a:active{outline: none;}
 address{font-style:inherit;}
-aside,nav,footer,header,section{display: block;}
+aside,nav,footer,header,main,section{display: block;}
 html,body{height: 100%;width: 100%;min-width: $minwidth;color:$color;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
-body{background: $bgc;font-size: 100%;line-height: 1.2;font-size: $fz;font-family: $fontfamily;-ms-text-size-adjust: 100%;-moz-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;}
+body{background: $bgc;font-size: 100%;line-height:$lh;font-size:rem($fz);font-family: $fontfamily;-ms-text-size-adjust: 100%;-moz-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;}
 input,button,textarea{font-family: $fontfamily;}
 input::-ms-clear{display: none;}
 button{cursor: pointer;}
@@ -37,10 +48,17 @@ a, a:visited{text-decoration: none;color:inherit;}
 a:hover{text-decoration: none;}
 ul li{list-style: none;}
 img{display: block;max-width: 100%;}
-h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
+h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;margin: 0;}
 cite{font-style: normal;}
 
 //==========СТИЛИ==========
+html{
+	font-size: $fz;
+	@include mob {
+		font-size: $fz - 2px;
+	}
+}
+
 .wrapper{
 	min-height: 100%;
 	overflow: hidden;
@@ -49,10 +67,13 @@ cite{font-style: normal;}
 }
 
 .container{
-	max-width:$container+px;
+	max-width:$container;
 	margin: 0 auto;
 	width: 100%;
-	padding: 0 15px;
+	padding: 0 rem(16px);
+	@include tab {
+		padding: 0 1.5%;
+	}
 }
 
 

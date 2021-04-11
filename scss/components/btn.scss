@@ -24,4 +24,8 @@
 			color: $darkred;
 		}
 	}
+
+	@include mob {
+		font-size: 19px;
+	}
 }

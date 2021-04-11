@@ -4,6 +4,10 @@
 
 .socials__item {
 	margin-right: 10px;
+
+	@include mob {
+		margin-right: 14px;
+	}
 }
 
 .socials__item:last-child{
@@ -11,42 +15,21 @@
 }
 
 .socials__link {
-	display: block;
+	&:hover{
+		.socials__icon{
+			fill: #000;
+		}
+	}
+}
+
+.socials__icon{
 	width: 30px;
 	height: 30px;
-	background: url('../images/css_sprites.png') no-repeat;
-}
+	fill: #b3b3b3;
+	transition: fill .3s;
 
-
-
-.socials__item_icon_telegram .socials__link {
-	background-position: -110px -10px;
-}
-
-.socials__item_icon_telegram .socials__link:hover {
-	background-position: -10px -110px;
-}
-
-.socials__item_icon_vk .socials__link {
-	background-position: -60px -110px;
-}
-
-.socials__item_icon_vk .socials__link:hover {
-	background-position: -110px -60px;
-}
-
-.socials__item_icon_fb .socials__link {
-	background-position: -60px -10px;
-}
-
-.socials__item_icon_fb .socials__link:hover {
-	background-position: -10px -10px;
-}
-
-.socials__item_icon_inst .socials__link {
-	background-position: -10px -60px;
-}
-
-.socials__item_icon_inst .socials__link:hover {
-	background-position: -60px -60px;
+	@include mob {
+		width: 24px;
+		height: 24px;
+	}
 }

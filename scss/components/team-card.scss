@@ -1,9 +1,9 @@
 .team-card{
-	padding: 0 20px;
+	padding: 0 rem(20px);
 }
 
 .team-card__photo{
-	margin-bottom: 25px;
+	margin-bottom: rem(25px);
 }
 
 .shop-card__name{
@@ -22,6 +22,6 @@
 		border: 6px solid transparent;
 		border-top: 9px solid $red;
 		border-bottom: none;
-		margin-left: 5px;
+		margin-left: rem(5px);
 	}
 }

@@ -5,13 +5,23 @@
 	transition: color 0.3s;
 
 	&:hover{
+		.phone-number__icon{
+			fill: $red;
+		}
 		color: $red;
 	}
 }
 
 .phone-number__icon{
-	width: 14px;
-	height: 14px;
-	margin-right: 6px;
-	
+	width: rem(14px);
+	height: rem(14px);
+	display: inline-block;
+	fill: $black;
+	margin-right: rem(6px);
+	transition: fill .3s;
+}
+
+.phone-number__text {
+	white-space: nowrap;
+	flex-shrink: 0;
 }

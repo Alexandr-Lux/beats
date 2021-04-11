@@ -1,18 +1,33 @@
+.menu{
+	margin: 0 35px;
+	padding-top: 10px;
+}
+
 .menu__list{
 	display: flex;
-	font-size: 18px;
+	flex-wrap: wrap;
+	justify-content: center;
+	font-size: rem(18px);
 	font-family: 'Alegreya Sans', sans-serif;
+	@include tab {
+		display: none;
+	}
 }
 
 .menu__item{
-	margin-right: 27.5px;
+	margin-right: rem(27.5px);
 	transition: transform 0.3s;
+	margin-bottom: 10px;
 
 	&:last-child{
 		margin-right: 0;
 	}
 
 	&:hover{
-		transform: translateY(-4px);
+		transform: translateY(rem(-4px));
 	}
+}
+
+.menu__link{
+	white-space: nowrap;
 }
