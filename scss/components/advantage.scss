@@ -6,8 +6,19 @@
 .advantage__item{
 	display: flex;
 	align-items: center;
-	max-width: 174px;
+	&:first-child{
+		.advantage__content{
+			background-image: url('../images/hero/ear.svg');
+		}
+	}
+
+	&:last-child{
+		.advantage__content{
+			background-image: url('../images/hero/plug.svg');
+		}
+	}
 }
+
 
 .advantage__icon{
 	margin-right: 11px;
@@ -16,6 +27,9 @@
 	fill: $black;
 }
 
-.advantage__content{
-	flex: 1;
+.advantage__content {
+	padding-left: 55px;
+	min-height: 41px;
+	max-width: 166px;
+	background: url("../images/hero/energy.svg") left center / 41px 41px no-repeat;
 }
