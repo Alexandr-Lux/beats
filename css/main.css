@@ -393,8 +393,11 @@ html {
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
-  max-width: 174px; }
+  align-items: center; }
+  .advantage__item:first-child .advantage__content {
+    background-image: url("../images/hero/ear.svg"); }
+  .advantage__item:last-child .advantage__content {
+    background-image: url("../images/hero/plug.svg"); }
 
 .advantage__icon {
   margin-right: 11px;
@@ -403,9 +406,10 @@ html {
   fill: #292929; }
 
 .advantage__content {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1; }
+  padding-left: 55px;
+  min-height: 41px;
+  max-width: 166px;
+  background: url("../images/hero/energy.svg") left center/41px 41px no-repeat; }
 
 .why:after {
   content: url("../images/decor/red-triangle.png");
@@ -520,8 +524,13 @@ html {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 24px;
-  background: #F2F5F4; }
+  margin-bottom: 24px; }
+  .why-card__image_battery {
+    background: #F2F5F4 url("../images/why/battery.svg") center center/68px 68px no-repeat; }
+  .why-card__image_sound {
+    background: #F2F5F4 url("../images/why/sound.svg") center center/68px 68px no-repeat; }
+  .why-card__image_charge {
+    background: #F2F5F4 url("../images/why/charge.svg") center center/68px 68px no-repeat; }
   @media (max-width: 480px) {
     .why-card__image {
       margin: 0 12px 0 0; } }
