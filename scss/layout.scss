@@ -42,7 +42,7 @@ html,body{height: 100%;width: 100%;min-width: $minwidth;color:$color;-webkit-fon
 body{background: $bgc;font-size: 100%;line-height:$lh;font-size:rem($fz);font-family: $fontfamily;-ms-text-size-adjust: 100%;-moz-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;}
 input,button,textarea{font-family: $fontfamily;}
 input::-ms-clear{display: none;}
-button{cursor: pointer;}
+button{cursor: pointer;background-color:transparent;}
 button::-moz-focus-inner {padding:0;border:0;}
 a, a:visited{text-decoration: none;color:inherit;}
 a:hover{text-decoration: none;}
