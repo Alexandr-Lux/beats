@@ -16,7 +16,7 @@
 
 .menu__item{
 	margin-right: rem(27.5px);
-	transition: transform 0.3s;
+	transition: transform .3s;
 	margin-bottom: 10px;
 
 	&:last-child{
@@ -30,4 +30,24 @@
 
 .menu__link{
 	white-space: nowrap;
+}
+
+.menu_vertical{
+	.menu__list{
+		flex-direction: column;
+		align-items: center;
+		.menu__item{
+			margin-right: 0;
+			font-size: 36px;
+			font-family: Play, serif;
+			margin-bottom: 25px;
+			color: #fff;
+			&:hover{
+				transform: scale(1.05);
+			}
+		}
+		@include tab {
+			display: flex;
+		}
+	}
 }

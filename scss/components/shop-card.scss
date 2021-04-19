@@ -1,26 +1,30 @@
 .shop-card{
 	display: flex;
 	justify-content: space-between;
+	@include tab {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+}
+
+.shop-card__img-wrap{
+	flex: 1 0 50%;
+	display: flex;
+	align-items: center;
+	@include tab {
+		width: 46%;
+	}
 }
 
 .shop-card__body{
 	margin-left: rem(60px);
-}
-
-.shop-card__parameter-btn{
 	display: flex;
-	width: 91px;
-	height: 91px;
-	background-color: #9a9a9a;
-	border-radius: 4px;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: rem(25px);
-}
-
-.shop-card__icon{
-	width: 42px;
-	height: 42px;
+	flex-direction: column;
+	@include tab {
+		margin-left: 0;
+		align-items: center;
+	}
 }
 
 .shop-card__title{
@@ -28,17 +32,22 @@
 	font-weight: 700;
 	text-transform: uppercase;
 	color: $black;
-	max-width: rem(450px);
 	margin-bottom: rem(24px);
+	@include tab{
+		max-width: none;
+		font-size: 28px;
+	}
 }
 
 .shop-card__text{
 	margin-bottom: rem(27px);
+	flex: 1;
 }
 
 .shop-card__parameter-list{
 	display: flex;
 	margin-bottom: rem(24px);
+	text-align: left;
 }
 
 .shop-card__parameter-item{
@@ -63,5 +72,13 @@
 .shop-card__price{
 	font-size: rem(36px);
 	color: $black;
-	margin-right: rem(13px);
+	margin-right: rem(19px);
+	@include tab {
+		margin-right: rem(30px);
+		font-size: rem(40px);
+	}
+	@include mob {
+		margin-right: remmob(30px);
+		font-size: remmob(32px);
+	}
 }

@@ -1,4 +1,27 @@
-.shop{
-	padding: 66px 61px 124px;
+.shop-section{
 	background-color: #F8FAF9;
 }
+
+.shop-container{
+	max-width:$container+48px;
+}
+
+.shop{
+	display: flex;
+	align-items: center;
+
+	&:after{
+		content: url('../../images/decor/square.png');
+		position: absolute;
+		bottom: 0;
+		right: 10%;
+		transform: translateY(50%);
+		z-index: 10;
+	}
+}
+
+.shop__list{
+	flex: 1;
+	margin: 0 10px;
+}
+

@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Beats</title>
-	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="./main.css">
 </head>
 <body>
 	<div class="wrapper">
@@ -27,11 +27,11 @@
 						</nav>
 						<a href="tel:+78009039090" class="phone-number header__phone-number">
 							<svg class="phone-number__icon">
-								<use xlink:href="./sprite.svg#phone"></use>
+								<use xlink:href="./images/sprite.svg#phone"></use>
 							</svg>
 							<span class="phone-number__text">8 800 903 90 90</span>
 						</a>
-						<button type="button" class="burger">
+						<button type="button" href="#" class="burger">
 							<span class="burger__item"></span>
 							<span class="burger__item"></span>
 							<span class="burger__item"></span>
@@ -102,36 +102,75 @@
 				</div>
 			</section>
 
-			<!-- <section class="shop"> 
-				<div class="container">
-					<div class="shop-card">
-						<img class="shop-card__image" src="./images/shop/shop-grey.png" alt="">
-						<div class="shop-card__body">
-							<div class="shop-card__parameter-btn">
-								<img src="./images/shop/gear.svg" alt="" class="shop-card__icon">
-							</div>
-							<h2 class="shop-card__title">beats solo 3. цвет «атласное серебро»</h2>
-							<div class="shop-card__text">
-								<p>Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите их и поднесите к своему iPhone — они мгновенно подключатся к нему.</p>
-							</div>
-							<ul class="shop-card__parameter-list">
-								<li class="shop-card__parameter-item">
-									<div class="shop-card__property">Зарядка</div>
-									<div class="shop-card__prop-value">2 часа</div>
-								</li>
-								<li class="shop-card__parameter-item">
-									<div class="shop-card__property">Вес</div>
-									<div class="shop-card__prop-value">215 грамм</div>
-								</li>
-							</ul>
-							<div class="shop-card__buy">
-								<div class="shop-card__price">14 990 ₽</div>
-								<div class="btn">Заказать</div>
-							</div>
-						</div>
+			<section class="section shop-section"> 
+				<div class="container shop-container">
+					<div class="shop">
+						<button class="shop__btn" id="left">
+							<img src="./images/shop/left.svg" alt="" class="shop-slider__icon">
+						</button>
+						<ul class="shop__list">
+							<li class="shop-card">
+								<div class="shop-card__img-wrap">
+									<img class="shop-card__image" src="./images/shop/shop-grey.png" alt="">
+								</div>
+								<div class="shop-card__body">
+									<div class="spec">
+										<button class="spec__btn"></button>
+										<ul class="spec__list">
+											<li class="spec__item">
+												<img src="/images/shop/bt.svg" alt="" class="spec__icon">
+												<div class="spec__prop">Bluetooth</div>
+												<div class="spec__value">4.0</div>
+											</li>
+											<li class="spec__item">
+												<img src="/images/shop/range.svg" alt="" class="spec__icon">
+												<div class="spec__prop">Дальность</div>
+												<div class="spec__value">12 м</div>
+											</li>
+											<li class="spec__item">
+												<img src="/images/shop/charger.svg" alt="" class="spec__icon">
+												<div class="spec__prop">Зарядка</div>
+												<div class="spec__value">3 ч</div>
+											</li>
+											<li class="spec__item">
+												<img src="/images/shop/weight.svg" alt="" class="spec__icon">
+												<div class="spec__prop">Вес</div>
+												<div class="spec__value">215 гр</div>
+											</li>
+											<li class="spec__item">
+												<img src="/images/shop/warranty.svg" alt="" class="spec__icon">
+												<div class="spec__prop">Гарантия</div>
+												<div class="spec__value">1 год</div>
+											</li>
+										</ul>
+									</div>
+									<h2 class="shop-card__title">beats solo 3. цвет «атласное серебро»</h2>
+									<div class="shop-card__text">
+										<p>Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите их и поднесите к своему iPhone — они мгновенно подключатся к нему.</p>
+									</div>
+									<ul class="shop-card__parameter-list">
+										<li class="shop-card__parameter-item">
+											<div class="shop-card__property">Зарядка</div>
+											<div class="shop-card__prop-value">2 часа</div>
+										</li>
+										<li class="shop-card__parameter-item">
+											<div class="shop-card__property">Вес</div>
+											<div class="shop-card__prop-value">215 грамм</div>
+										</li>
+									</ul>
+									<div class="shop-card__buy">
+										<div class="shop-card__price">14&nbsp;990&nbsp;₽</div>
+										<div class="btn">Заказать</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<button class="shop-slider__btn" id="right">
+							<img src="./images/shop/right.svg" alt="" class="shop-slider__icon">
+						</button>
 					</div>
 				</div>
-			</section> -->
+			</section>
 
 			<!-- <section class="team">
 				<div class="container small-container">
@@ -192,17 +231,17 @@
 						</div>
 						<ul class="reviews__switcher">
 							<li class="reviews__switcher-item active">
-								<button type="button" class="reviews__switcher-link">
+								<button type="button" href="#" class="reviews__switcher-link">
 									<img src="./images/reviews/review1.jpg" alt="" class="reviews__link-image">
 								</button>
 							</li>
 							<li class="reviews__switcher-item">
-								<button type="button" class="reviews__switcher-link">
+								<button type="button" href="#" class="reviews__switcher-link">
 									<img src="./images/reviews/review2.jpg" alt="" class="reviews__link-image">
 								</button>
 							</li>
 							<li class="reviews__switcher-item">
-								<button type="button" class="reviews__switcher-link">
+								<button type="button" href="#" class="reviews__switcher-link">
 									<img src="./images/reviews/review3.jpg" alt="" class="reviews__link-image">
 								</button>
 							</li>
@@ -277,7 +316,7 @@
 											<input type="checkbox" name="callback" class="controls__input">
 											<div class="controls__elem">
 												<svg class="controls__icon">
-													<use xlink:href="./sprite.svg#check"></use>
+													<use xlink:href="./images/sprite.svg#check"></use>
 												</svg>
 											</div>
 											<span class="controls__text">Не перезванивать</span>
@@ -304,7 +343,7 @@
 								<div class="footer__address">Москва, ул.Новый Арбат, д.31/12</div>
 								<a href="tel:+78009039090" class="phone-number footer__phone-number">
 									<svg class="phone-number__icon">
-										<use xlink:href="./sprite.svg#phone"></use>
+										<use xlink:href="./images/sprite.svg#phone"></use>
 									</svg>
 									<span class="phone-text">8 800 903 90 90</span>
 								</a>
@@ -313,25 +352,25 @@
 								<ul class="socials">
 									<li class="socials__item"><a href="#" class="socials__link">
 										<svg class="socials__icon">
-											<use xlink:href="./sprite.svg#vk"></use>
+											<use xlink:href="./images/sprite.svg#vk"></use>
 										</svg>
 									</a>
 									</li>
 									<li class="socials__item"><a href="#" class="socials__link">
 										<svg class="socials__icon">
-											<use xlink:href="./sprite.svg#fb"></use>
+											<use xlink:href="./images/sprite.svg#fb"></use>
 										</svg>
 									</a>
 									</li>
 									<li class="socials__item"><a href="#" class="socials__link">
 										<svg class="socials__icon">
-											<use xlink:href="./sprite.svg#inst"></use>
+											<use xlink:href="./images/sprite.svg#inst"></use>
 										</svg>
 									</a>
 									</li>
 									<li class="socials__item"><a href="#" class="socials__link">
 										<svg class="socials__icon">
-											<use xlink:href="./sprite.svg#telegram"></use>
+											<use xlink:href="./images/sprite.svg#telegram"></use>
 										</svg>
 									</a>
 									</li>
@@ -357,6 +396,20 @@
 			<li class="fixed-menu__item"><a href="#" class="fixed-menu__link"></a></li>
 		</ul>
 	</nav>
-
+	<div class="overlay">
+		<nav class="menu menu_vertical">
+			<ul class="menu__list">
+				<li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
+				<li class="menu__item"><a href="#" class="menu__link">Наушники</a></li>
+				<li class="menu__item"><a href="#" class="menu__link">Команда</a></li>
+				<li class="menu__item"><a href="#" class="menu__link">Цвета</a></li>
+				<li class="menu__item"><a href="#" class="menu__link">Отзывы</a></li>
+				<li class="menu__item"><a href="#" class="menu__link">Как мы работаем</a></li>
+				<li class="menu__item"><a href="#" class="menu__link">Контакты </a></li>
+			</ul>
+		</nav>
+		<button class="overlay__close-btn"></button>
+	</div>
+	<script src="./main.js"></script>
 </body>
 </html>

@@ -1,0 +1,60 @@
+.spec{
+	position: relative;
+	display: inline-block;
+	margin-bottom: rem(25px);
+	@include tab {
+		display: none;;
+	}
+	&:hover{
+		.spec__list{
+			transition: top .1s, opacity .5s;
+			top: 0;
+			opacity: .8;
+		}
+		.spec__btn{
+			background-color: #6e6e6e;
+		}
+	}
+}
+
+.spec__list{
+	width: 273px;
+	padding: 30px;
+	position: absolute;
+	top: -100vh;
+	left: 91px;
+	background: #fff;
+	opacity: 0;
+	box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+	border-radius: 4px;
+	color: #000;
+}
+
+.spec__item{
+	display: flex;
+	margin-bottom: 28px;
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+
+.spec__icon{
+	width: 24px;
+	height: 24px;
+	padding-right: 10px;
+}
+
+.spec__prop{
+	flex: 1;
+}
+
+.spec__btn{
+	display: flex;
+	width: 91px;
+	height: 91px;
+	background: #9a9a9a url('../images/shop/gear.svg') center / 42px 42px no-repeat;
+	border-radius: 4px;
+	justify-content: center;
+	align-items: center;
+	transition: background-color .3s;
+}

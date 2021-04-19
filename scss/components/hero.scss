@@ -2,7 +2,7 @@
 	background-color: #f5f5f5;
 	min-height: 100vh;
 	display: flex;
-	padding: rem(24px) 0 rem(65px);
+	padding: 0 0 rem(65px);
 	color: $black;
 	position: relative;
 	&:after{
@@ -11,6 +11,7 @@
 		bottom: 0;
 		right: 10%;
 		transform: translateY(50%);
+		z-index: 10;
 	}
 }
 
