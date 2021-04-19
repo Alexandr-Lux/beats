@@ -8,13 +8,13 @@
 	align-items: center;
 	&:first-child{
 		.advantage__content{
-			background-image: url('../images/hero/ear.svg');
+			background-image: url('./images/hero/ear.svg');
 		}
 	}
 
 	&:last-child{
 		.advantage__content{
-			background-image: url('../images/hero/plug.svg');
+			background-image: url('./images/hero/plug.svg');
 		}
 	}
 }
@@ -31,5 +31,5 @@
 	padding-left: 55px;
 	min-height: 41px;
 	max-width: 166px;
-	background: url("../images/hero/energy.svg") left center / 41px 41px no-repeat;
+	background: url("./images/hero/energy.svg") left center / 41px 41px no-repeat;
 }

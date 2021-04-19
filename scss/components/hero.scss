@@ -6,7 +6,7 @@
 	color: $black;
 	position: relative;
 	&:after{
-		content: url('../images/decor/Rectangle-45.png');
+		content: url('./images/decor/Rectangle-45.png');
 		position: absolute;
 		bottom: 0;
 		right: 10%;
@@ -21,7 +21,7 @@
 	flex-direction: column;
 	justify-content: space-between;
 	flex: 1;
-	background: url('../images/hero/hero.png') center right / 50% auto no-repeat;
+	background: url('./images/hero/hero.png') center right / 50% auto no-repeat;
 	@include tab {
 		background: none;
 	}
@@ -43,7 +43,7 @@
 		align-items: center;
 		&:before {
 			content: "";
-			background: url('../images/hero/hero.png') center / contain no-repeat;
+			background: url('./images/hero/hero.png') center / contain no-repeat;
 			display: block;
 			width: 323px;
 			height: 323px;

@@ -41,7 +41,7 @@
 .spec__icon{
 	width: 24px;
 	height: 24px;
-	padding-right: 10px;
+	margin-right: 16px;
 }
 
 .spec__prop{
@@ -52,7 +52,7 @@
 	display: flex;
 	width: 91px;
 	height: 91px;
-	background: #9a9a9a url('../images/shop/gear.svg') center / 42px 42px no-repeat;
+	background: #9a9a9a url('./images/shop/gear.svg') center / 42px 42px no-repeat;
 	border-radius: 4px;
 	justify-content: center;
 	align-items: center;

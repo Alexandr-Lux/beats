@@ -174,7 +174,7 @@ body {
   position: relative;
 }
 .hero:after {
-  content: url("../images/decor/Rectangle-45.png");
+  content: url("./images/decor/Rectangle-45.png");
   position: absolute;
   bottom: 0;
   right: 10%;
@@ -199,7 +199,7 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  background: url("../images/hero/hero.png") center right/50% auto no-repeat;
+  background: url("./images/hero/hero.png") center right/50% auto no-repeat;
 }
 @media (max-width: 768px) {
   .hero__container {
@@ -241,7 +241,7 @@ body {
   }
   .hero__title-section:before {
     content: "";
-    background: url("../images/hero/hero.png") center/contain no-repeat;
+    background: url("./images/hero/hero.png") center/contain no-repeat;
     display: block;
     width: 323px;
     height: 323px;
@@ -516,10 +516,10 @@ body {
           align-items: center;
 }
 .advantage__item:first-child .advantage__content {
-  background-image: url("../images/hero/ear.svg");
+  background-image: url("./images/hero/ear.svg");
 }
 .advantage__item:last-child .advantage__content {
-  background-image: url("../images/hero/plug.svg");
+  background-image: url("./images/hero/plug.svg");
 }
 
 .advantage__icon {
@@ -533,11 +533,11 @@ body {
   padding-left: 55px;
   min-height: 41px;
   max-width: 166px;
-  background: url("../images/hero/energy.svg") left center/41px 41px no-repeat;
+  background: url("./images/hero/energy.svg") left center/41px 41px no-repeat;
 }
 
 .why:after {
-  content: url("../images/decor/red-triangle.png");
+  content: url("./images/decor/red-triangle.png");
   position: absolute;
   bottom: 0;
   left: 10%;
@@ -596,7 +596,7 @@ body {
   position: relative;
 }
 .why__item:before {
-  content: url("../images/why/decor.png");
+  content: url("./images/why/decor.png");
   position: absolute;
   top: 50px;
   right: 0;
@@ -683,13 +683,13 @@ body {
   margin-bottom: 24px;
 }
 .why-card__image_battery {
-  background: #F2F5F4 url("../images/why/battery.svg") center center/68px 68px no-repeat;
+  background: #F2F5F4 url("./images/why/battery.svg") center center/68px 68px no-repeat;
 }
 .why-card__image_sound {
-  background: #F2F5F4 url("../images/why/sound.svg") center center/68px 68px no-repeat;
+  background: #F2F5F4 url("./images/why/sound.svg") center center/68px 68px no-repeat;
 }
 .why-card__image_charge {
-  background: #F2F5F4 url("../images/why/charge.svg") center center/68px 68px no-repeat;
+  background: #F2F5F4 url("./images/why/charge.svg") center center/68px 68px no-repeat;
 }
 @media (max-width: 480px) {
   .why-card__image {
@@ -727,7 +727,7 @@ body {
           align-items: center;
 }
 .shop:after {
-  content: url("../../images/decor/square.png");
+  content: url("./images/decor/square.png");
   position: absolute;
   bottom: 0;
   right: 10%;
@@ -918,7 +918,7 @@ body {
 .spec__icon {
   width: 24px;
   height: 24px;
-  padding-right: 10px;
+  margin-right: 16px;
 }
 
 .spec__prop {
@@ -933,7 +933,7 @@ body {
   display: flex;
   width: 91px;
   height: 91px;
-  background: #9a9a9a url("../images/shop/gear.svg") center/42px 42px no-repeat;
+  background: #9a9a9a url("./images/shop/gear.svg") center/42px 42px no-repeat;
   border-radius: 4px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1005,7 +1005,7 @@ body {
 }
 
 .reviews:after {
-  content: url("../images/decor/circle.png");
+  content: url("./images/decor/circle.png");
   position: absolute;
   bottom: 0;
   left: 10%;
@@ -1193,7 +1193,7 @@ body {
 }
 
 .delivery-section {
-  background: url("../images/form/form.jpg") center bottom/cover no-repeat;
+  background: url("./images/form/form.jpg") center bottom/cover no-repeat;
   background-color: #181818;
   color: #ffffff;
   padding: 3% 0;
@@ -1487,7 +1487,7 @@ body {
   height: 100vh;
   min-height: 650px;
   position: relative;
-  background: url("../images/map.jpg") center center/cover no-repeat;
+  background: url("./images/map.jpg") center center/cover no-repeat;
 }
 
 .socials {
@@ -1644,7 +1644,7 @@ body {
 }
 
 .overlay__close-btn {
-  background: url("../images/close.svg") center/contain no-repeat;
+  background: url("./images/close.svg") center/contain no-repeat;
   width: 20px;
   height: 20px;
   position: absolute;

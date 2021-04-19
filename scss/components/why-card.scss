@@ -26,13 +26,13 @@
 	margin-bottom: 24px;
 	
 	&_battery{
-		background: #F2F5F4 url('../images/why/battery.svg') center center / 68px 68px no-repeat;
+		background: #F2F5F4 url('./images/why/battery.svg') center center / 68px 68px no-repeat;
 	}
 	&_sound{
-		background: #F2F5F4 url('../images/why/sound.svg') center center / 68px 68px no-repeat;
+		background: #F2F5F4 url('./images/why/sound.svg') center center / 68px 68px no-repeat;
 	}
 	&_charge{
-		background: #F2F5F4 url('../images/why/charge.svg') center center / 68px 68px no-repeat;
+		background: #F2F5F4 url('./images/why/charge.svg') center center / 68px 68px no-repeat;
 	}
 
 	@include mob {
