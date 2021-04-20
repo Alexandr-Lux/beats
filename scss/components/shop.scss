@@ -2,7 +2,7 @@
 	background-color: #F8FAF9;
 }
 
-.shop-container{
+.shop-section__container{
 	max-width:$container+48px;
 }
 
@@ -23,5 +23,12 @@
 .shop__list{
 	flex: 1;
 	margin: 0 10px;
+	display: flex;
+	overflow: hidden;
+}
+
+.shop__item{
+	flex: 1 0 auto;
+	width: 100%;
 }
 

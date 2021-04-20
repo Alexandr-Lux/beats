@@ -16,15 +16,26 @@
 
 .menu__item{
 	margin-right: rem(27.5px);
-	transition: transform .3s;
 	margin-bottom: 10px;
+
+
+	&:after{
+		content: '';
+		display: block;
+		width: 0;
+		height: 2px;
+		background-color: $black;
+		transition: width .2s;
+	}
 
 	&:last-child{
 		margin-right: 0;
 	}
 
 	&:hover{
-		transform: translateY(rem(-4px));
+		&::after{
+			width: 100%;
+		}
 	}
 }
 
@@ -33,6 +44,9 @@
 }
 
 .menu_vertical{
+	z-index: $z-menu;
+	align-self: center;
+	padding-top: 110px;
 	.menu__list{
 		flex-direction: column;
 		align-items: center;
@@ -42,6 +56,9 @@
 			font-family: Play, serif;
 			margin-bottom: 25px;
 			color: #fff;
+			&:after{
+				display: none;
+			}
 			&:hover{
 				transform: scale(1.05);
 			}

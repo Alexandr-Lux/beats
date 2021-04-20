@@ -1,29 +1,17 @@
 .overlay{
 	position: absolute;
-	z-index: 1000;
+	z-index: $z-overlay;
 	height: 100%;
 	width: 100%;
 	background: #333537;
 	top: 0;
-	left: 0;
+	right: -200vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	display: none;
-	&.active{
-		display: flex;
-	}
-}
+	transition: right .4s;
 
-.overlay__close-btn{
-	background: url('./images/close.svg') center / contain no-repeat;
-	width: 20px;
-	height: 20px;
-	position: absolute;
-	top: 42px;
-	right: 42px;
-	transition: transform .2s;
-	&:hover{
-		transform: scale(1.1);
+	&.active{
+		right: 0;
 	}
 }
