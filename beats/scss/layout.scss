@@ -1,0 +1,88 @@
+//==========ШРИФТЫ==========
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&family=Open+Sans&family=Play:wght@400;700&display=swap');
+
+//==========NORMALIZE==========
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css');
+
+//==========ЦВЕТА==========
+$black:#292929;
+$grey:#666666;
+$white:#ffffff;
+$red:#E01F3D;
+$darkred:#CA1B36;
+
+//==========ПЕРЕМЕННЫЕ==========
+$minwidth:320px;
+$container:972px;
+$tab:768px;
+$mob:480px;
+$fontfamily: Play, sans-serif;
+$color:$grey;
+$fz:16px;
+$bgc:$white;
+$z-fixed:100;
+$z-overlay:1000;
+$z-burger:$z-overlay+1;
+$z-menu:$z-overlay+1;
+$lh:1.2;
+
+//==========ФУНКЦИИ==========
+@function rem ($px) {@return $px/$fz + 0rem;}
+@function remmob ($pxm) {@return $pxm/($fz - 2px) + 0rem;}
+
+//==========МИКСИНЫ==========
+@mixin tab {@media (max-width: $tab) {@content;}}
+@mixin mob {@media (max-width: $mob) {@content;}}
+
+//==========ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ==========
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+address{font-style:inherit;}
+aside,nav,footer,header,main,section{display: block;}
+html,body{height: 100%;width: 100%;min-width: $minwidth;color:$color;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+body{background: $bgc;font-size: 100%;line-height:$lh;font-size:rem($fz);font-family: $fontfamily;-ms-text-size-adjust: 100%;-moz-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;}
+input,button,textarea{font-family: $fontfamily;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;background-color:transparent;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;color:inherit;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{display: block;max-width: 100%;}
+h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;margin: 0;}
+cite{font-style: normal;}
+
+//==========СТИЛИ==========
+html{
+	font-size: $fz;
+	@include mob {
+		font-size: $fz - 2px;
+	}
+}
+
+body{
+	position: relative;
+
+}
+
+.wrapper{
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.container{
+	max-width:$container;
+	margin: 0 auto;
+	width: 100%;
+	padding: 0 rem(16px);
+	@include tab {
+		padding: 0 1.5%;
+	}
+}
+
+
+

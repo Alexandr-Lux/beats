@@ -1,0 +1,84 @@
+.shop-card{
+	display: flex;
+	justify-content: space-between;
+	@include tab {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+}
+
+.shop-card__img-wrap{
+	flex: 1 0 50%;
+	display: flex;
+	align-items: center;
+	@include tab {
+		width: 46%;
+	}
+}
+
+.shop-card__body{
+	margin-left: rem(60px);
+	display: flex;
+	flex-direction: column;
+	@include tab {
+		margin-left: 0;
+		align-items: center;
+	}
+}
+
+.shop-card__title{
+	font-size: 36px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: $black;
+	margin-bottom: rem(24px);
+	@include tab{
+		max-width: none;
+		font-size: 28px;
+	}
+}
+
+.shop-card__text{
+	margin-bottom: rem(27px);
+	flex: 1;
+}
+
+.shop-card__parameter-list{
+	display: flex;
+	margin-bottom: rem(24px);
+	text-align: left;
+}
+
+.shop-card__parameter-item{
+	margin-right: rem(86px);
+
+	&:last-child{
+		margin-right: 0;
+	}
+}
+
+.shop-card__prop-value{
+	font-size: rem(18px);
+	font-weight: 700;
+	color: $black;
+}
+
+.shop-card__buy{
+	display: flex;
+	align-items: center;
+}
+
+.shop-card__price{
+	font-size: rem(36px);
+	color: $black;
+	margin-right: rem(19px);
+	@include tab {
+		margin-right: rem(30px);
+		font-size: rem(40px);
+	}
+	@include mob {
+		margin-right: remmob(30px);
+		font-size: remmob(32px);
+	}
+}

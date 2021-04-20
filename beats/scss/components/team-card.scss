@@ -1,0 +1,27 @@
+.team-card{
+	padding: 0 rem(20px);
+}
+
+.team-card__photo{
+	margin-bottom: rem(25px);
+}
+
+.shop-card__name{
+	font-size: 18px;
+	font-weight: 700;
+	color: $black;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&:after{
+		content: "";
+		display: inline-block;
+		width: 0;
+		border: 6px solid transparent;
+		border-top: 9px solid $red;
+		border-bottom: none;
+		margin-left: rem(5px);
+	}
+}
