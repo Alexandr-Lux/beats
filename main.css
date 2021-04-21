@@ -306,6 +306,15 @@ body {
       -ms-flex-align: start;
           align-items: flex-start;
   padding-top: 1.5rem;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .header__logo {
@@ -375,7 +384,7 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  padding-top: 110px;
+  padding-top: 70px;
   margin: 0;
 }
 .menu_vertical .menu__list {
@@ -447,9 +456,9 @@ body {
 }
 
 .burger {
-  padding-top: 15px;
   display: none;
   width: 26px;
+  padding: 10px 0;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -461,6 +470,9 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   z-index: 1001;
+  position: absolute;
+  top: 34px;
+  right: 0;
 }
 .burger.active .burger__item {
   height: 0;
@@ -993,19 +1005,19 @@ body {
   padding-left: 40px;
 }
 .spec__prop_bt {
-  background: url("../../images/shop/bt.svg") left center/24px 24px no-repeat;
+  background: url("../images/shop/bt.svg") left center/24px 24px no-repeat;
 }
 .spec__prop_range {
-  background: url("../../images/shop/range.svg") left center/24px 24px no-repeat;
+  background: url("../images/shop/range.svg") left center/24px 24px no-repeat;
 }
 .spec__prop_charger {
-  background: url("../../images/shop/charger.svg") left center/24px 24px no-repeat;
+  background: url("../images/shop/charger.svg") left center/24px 24px no-repeat;
 }
 .spec__prop_weight {
-  background: url("../../images/shop/weight.svg") left center/24px 24px no-repeat;
+  background: url("../images/shop/weight.svg") left center/24px 24px no-repeat;
 }
 .spec__prop_warranty {
-  background: url("../../images/shop/warranty.svg") left center/24px 24px no-repeat;
+  background: url("../images/shop/warranty.svg") left center/24px 24px no-repeat;
 }
 
 .spec__btn {

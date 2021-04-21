@@ -1,11 +1,14 @@
 .burger{
-	padding-top: 15px;
 	display: none;
 	width: 26px;
+	padding: 10px 0;
 	flex-direction: column;
 	justify-content: center;
 	justify-content: space-between;
 	z-index: $z-burger;
+	position: absolute;
+	top: 34px;
+	right: 0;
 	
 	&.active {
 		.burger__item{
