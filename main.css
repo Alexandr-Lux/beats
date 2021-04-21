@@ -1005,19 +1005,19 @@ body {
   padding-left: 40px;
 }
 .spec__prop_bt {
-  background: url("../images/shop/bt.svg") left center/24px 24px no-repeat;
+  background: url("./images/shop/bt.svg") left center/24px 24px no-repeat;
 }
 .spec__prop_range {
-  background: url("../images/shop/range.svg") left center/24px 24px no-repeat;
+  background: url("./images/shop/range.svg") left center/24px 24px no-repeat;
 }
 .spec__prop_charger {
-  background: url("../images/shop/charger.svg") left center/24px 24px no-repeat;
+  background: url("./images/shop/charger.svg") left center/24px 24px no-repeat;
 }
 .spec__prop_weight {
-  background: url("../images/shop/weight.svg") left center/24px 24px no-repeat;
+  background: url("./images/shop/weight.svg") left center/24px 24px no-repeat;
 }
 .spec__prop_warranty {
-  background: url("../images/shop/warranty.svg") left center/24px 24px no-repeat;
+  background: url("./images/shop/warranty.svg") left center/24px 24px no-repeat;
 }
 
 .spec__btn {
