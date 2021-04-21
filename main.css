@@ -376,6 +376,7 @@ body {
       -ms-grid-row-align: center;
       align-self: center;
   padding-top: 110px;
+  margin: 0;
 }
 .menu_vertical .menu__list {
   -webkit-box-orient: vertical;
