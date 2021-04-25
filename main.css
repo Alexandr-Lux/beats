@@ -861,7 +861,7 @@ html {
 }
 
 .shop-card__body {
-  margin-left: 3.75rem;
+  margin-left: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -961,7 +961,7 @@ html {
 
 .slick-slider {
   position: relative;
-  padding: 0 50px;
+  padding: 0 5%;
   min-height: 0;
 }
 @media (max-width: 480px) {
@@ -986,11 +986,9 @@ html {
   z-index: 10;
   font-size: 0;
   border: 0;
-  width: 13.5px;
-  height: 27px;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  width: 14px;
+  height: 28px;
+  margin-top: -7px;
 }
 
 .slick-arrow:hover {
@@ -1007,12 +1005,12 @@ html {
 
 .slick-arrow.slick-prev {
   left: 0;
-  background: url("../../images/shop/left.svg") 0 0/100% no-repeat;
+  background: url("./images/shop/left.svg") 0 0/cover no-repeat;
 }
 
 .slick-arrow.slick-next {
   right: 0;
-  background: url("../../images/shop/right.svg") 0 0/100% no-repeat;
+  background: url("./images/shop/right.svg") 0 0/cover no-repeat;
 }
 
 .spec {
