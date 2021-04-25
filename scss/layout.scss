@@ -5,6 +5,10 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css');
 
 //==========ЦВЕТА==========
+
+@import url("https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css");
+
+
 $black:#292929;
 $grey:#666666;
 $white:#ffffff;
@@ -62,16 +66,12 @@ html{
 	}
 }
 
-body{
-	position: relative;
-
-}
-
 .wrapper{
-	min-height: 100%;
-	overflow: hidden;
+	height: 5300px;
+	max-width: 100%;
 	display: flex;
 	flex-direction: column;
+	position: relative;
 }
 
 .container{

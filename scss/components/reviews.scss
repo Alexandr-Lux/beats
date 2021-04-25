@@ -10,10 +10,11 @@
 	}
 }
 
-.reviews__display{
+.reviews__list{
 	margin-bottom: 15px;
 	overflow: hidden;
 	position: relative;
+	display: flex;
 
 	&:before{
 		content: "";
@@ -38,6 +39,13 @@
 
 	@include mob {
 		margin-bottom: remmob(40px);
+	}
+}
+
+.reviews__item {
+	display: none;
+	&.current{
+		display: flex;
 	}
 }
 

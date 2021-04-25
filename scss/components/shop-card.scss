@@ -67,6 +67,10 @@
 .shop-card__buy{
 	display: flex;
 	align-items: center;
+	@include mob {
+		flex-direction: column;
+		align-items: center;
+	}
 }
 
 .shop-card__price{
@@ -78,7 +82,7 @@
 		font-size: rem(40px);
 	}
 	@include mob {
-		margin-right: remmob(30px);
+		margin: 0 0 20px 0;
 		font-size: remmob(32px);
 	}
 }
