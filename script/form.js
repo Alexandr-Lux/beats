@@ -1,57 +1,3 @@
-/******/ (function() { // webpackBootstrap
-var __webpack_exports__ = {};
-
-const body = document.body;
-const fullscreenMenu = document.querySelector('.overlay');
-const menu = document.querySelector('.menu');
-const burgerBtn = document.querySelector('.burger');
-const menuDirect = document.querySelectorAll('.menu__link');
-
-function overlayActive(){
-	fullscreenMenu.classList.toggle('active');
-	menu.classList.toggle('menu_vertical');
-	burgerBtn.classList.toggle('active');
-
-	if (burgerBtn.classList.contains('active')) {
-		body.style.overflow = 'hidden'
-	} else {
-		body.style.overflow = 'auto'
-	};
-};
-
-burgerBtn.addEventListener("click", function() {
-	overlayActive()
-});
-
-menuDirect.forEach(e => {
-	e.addEventListener('click', function() {
-		if (fullscreenMenu.classList.contains('active')) {
-			overlayActive();
-		}
-	});
-});
-$('.shop__list').slick({
-	speed: 700
-});
-const teamName = document.querySelectorAll('.team-card__name');
-const teamArea = document.querySelector('.team__list');
-
-teamArea.addEventListener('click', (e) => {
-	for (btn of teamName) {
-		if (e.target === btn || btn.parentNode.classList.contains('active')) {
-			btn.parentNode.classList.toggle('active');
-		}
-	}
-});
-$('.reviews__switcher-link').on('click', function (e) {
-	let currentSwitcher = $(e.currentTarget);
-	let getId = +currentSwitcher.attr('id').slice(-1);
-	let idReview = `review${getId}`;
-	$('.reviews__item').removeClass('current');
-	$('.reviews__switcher-item').removeClass('active');
-	$(`#${idReview}`).addClass('current');
-	currentSwitcher.closest('.reviews__switcher-item').addClass('active')
-});
 const form = document.querySelector('.form');
 const send = document.querySelector('.form__btn-send');
 
@@ -132,5 +78,3 @@ $('.modal__btn').on('click', e => {
 	$('.modal').css('display', 'none');
 	body.style.overflow = 'auto'
 });
-/******/ })()
-;

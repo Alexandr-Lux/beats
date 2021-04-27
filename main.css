@@ -158,7 +158,7 @@ html {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  padding: 5% 0;
+  padding: 3% 0;
 }
 
 .hero {
@@ -961,7 +961,7 @@ html {
 
 .slick-slider {
   position: relative;
-  padding: 0 5%;
+  padding: 0 50px;
   min-height: 0;
 }
 @media (max-width: 480px) {
@@ -1263,8 +1263,17 @@ html {
   line-height: 1.15;
 }
 
-.colors {
-  min-height: 650px;
+.colors-section {
+  background: url("./images/colors/woman.jpg") 0 0/cover no-repeat;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 4%;
+}
+
+.colors__title {
+  text-align: left;
+  padding-top: 50px;
 }
 
 .reviews:after {

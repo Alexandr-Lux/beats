@@ -1,4 +1,10 @@
-.colors{
-	min-height: 650px;
-	
+.colors-section{
+	background: url('./images/colors/woman.jpg') 0 0 / cover no-repeat;
+	justify-content: flex-start;
+	padding-left: 4%;
+}
+
+.colors__title{
+	text-align: left;
+	padding-top: 50px;
 }
