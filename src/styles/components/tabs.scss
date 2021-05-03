@@ -1,6 +1,9 @@
 .tabs__list{
 	display: flex;
 	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
 }
 
 .tabs__item{
@@ -13,6 +16,10 @@
 			max-width: 524px;
 			visibility: visible;
 			opacity: 1;
+
+			@include tab {
+				width: 100%;
+			}
 		}
 	}
 }
@@ -32,6 +39,10 @@
 	padding: 30px 40px;
 	line-height: 1.5;
 	font-family: 'Alegreya Sans', sans-serif;
+
+	@include tab {
+		padding: rem(15px) rem(20px);
+	}
 }
 
 .tabs__text-block{
@@ -39,6 +50,10 @@
 	height: 100%;
 	display: flex;
 	align-items: flex-end;
+
+	@include mob {
+		width: 90px;
+	}
 	
 	&_grey{
 		background: #999999;
@@ -58,8 +73,12 @@
 	transform-origin: 0 100%;
 	white-space: nowrap;
 	padding-top: 31px;
-	padding-left: 34px;
+	padding-left: 35px;
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1;
+
+	@include mob {
+		padding-top: 24px;
+	}
 }

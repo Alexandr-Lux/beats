@@ -20,9 +20,9 @@ $color:$grey;
 $fz:16px;
 $bgc:$white;
 $z-fixed:100;
-$z-overlay:1000;
-$z-burger:$z-overlay+1;
-$z-menu:$z-overlay+1;
+$z-overlay:100;
+$z-burger:$z-overlay+10;
+$z-menu:$z-overlay+10;
 $lh:1.2;
 
 //==========ФУНКЦИИ==========
@@ -61,13 +61,16 @@ html{
 	}
 }
 
+body {
+	position: relative;
+}
+
 .wrapper{
 	height: 100%;
 	max-width: 100%;
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
-	position: relative;
 }
 
 .container{

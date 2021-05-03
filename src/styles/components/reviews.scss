@@ -38,7 +38,7 @@
 	}
 
 	@include mob {
-		margin-bottom: remmob(40px);
+		margin-bottom: remmob(15px);
 	}
 }
 
@@ -51,6 +51,10 @@
 
 .reviews__title{
 	margin-bottom: rem(32px);
+
+	@include tab {
+		margin-bottom: rem(10px);
+	}
 }
 
 .reviews__switcher{

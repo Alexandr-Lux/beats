@@ -24,6 +24,12 @@
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 24px;
+
+	@include tab {
+		width: 96px;
+		height: 96px;
+		margin-bottom: 10px;
+	}
 	
 	&_battery{
 		background: #F2F5F4 url('./images/icons/battery.svg') center center / 68px 68px no-repeat;

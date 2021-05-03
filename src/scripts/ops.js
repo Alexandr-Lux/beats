@@ -69,21 +69,18 @@ function handleTouchStart (e) {
 function handleTouchMove (e) {
 	yEnd = e.changedTouches[0].clientY
 	
-	// if (Math.abs(yEnd - yStart) > 100){
-	// 	scrolling(scrollPosition)
-	// }
 
-	if ( yEnd < yStart && canScroll ) {
+	if ( yEnd < yStart && canScroll && (Math.abs(yEnd - yStart) > 70) ) {
 		if ( scrollPosition < sections.length -1 ) {
 			scrollPosition++;
 		}
 	} else {
-		if ( scrollPosition > 0 && canScroll ) {
+		if ( scrollPosition > 0 && canScroll && (Math.abs(yEnd - yStart) > 70) ) {
 			scrollPosition--;
 		}
 	}
-	scrolling(scrollPosition);
-
+	
+	scrolling(scrollPosition)
 }
 
 window.addEventListener('touchstart', handleTouchStart, false);

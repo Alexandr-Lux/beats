@@ -17,25 +17,14 @@
 .menu__item{
 	margin-right: rem(27.5px);
 	margin-bottom: 10px;
-
-
-	&:after{
-		content: '';
-		display: block;
-		width: 0;
-		height: 2px;
-		background-color: $black;
-		transition: width .2s;
-	}
+	transition: color .2s;
 
 	&:last-child{
 		margin-right: 0;
 	}
 
 	&:hover{
-		&::after{
-			width: 100%;
-		}
+		color: $red;
 	}
 }
 
@@ -63,9 +52,6 @@
 			color: #fff;
 			&:after{
 				display: none;
-			}
-			&:hover{
-				transform: scale(1.05);
 			}
 		}
 		@include tab {

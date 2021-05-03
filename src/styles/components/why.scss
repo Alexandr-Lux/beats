@@ -23,11 +23,11 @@
 	padding: 0 20%;
 	@include tab {
 		padding: 0 10%;
-		margin-bottom: rem(52px);
+		margin-bottom: rem(15px);
 	}
 	@include mob {
 		padding: 0 5%;
-		font-size: remmob(16px);
+		font-size: remmob(14px);
 	}
 }
 
@@ -66,12 +66,12 @@
 	}
 
 	@include tab {
-		padding: 0 1%;
+		padding: 0 ;
 	}
 
 	@include mob {
 		padding: 0;
-		margin-bottom: 38px;
+		margin-bottom: 10px;
 		&:last-child {
 			margin-bottom: 0;
 		}

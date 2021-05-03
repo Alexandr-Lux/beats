@@ -4,6 +4,7 @@
 	padding: 0;
 	width: 100%;
 	overflow: hidden;
+	position: relative;
 	
 }
 
@@ -15,7 +16,12 @@
 
 .colors__title{
 	text-align: left;
-	padding-top: 115px;
-	padding-left: 84px;
+	padding-top: 8%;
+	padding-left: 8%;
 	flex: 1 0 30%;
+
+	@include tab{
+		padding-top: 7%;
+		padding-left: 6%;
+	}
 }
