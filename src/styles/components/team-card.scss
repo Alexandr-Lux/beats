@@ -1,0 +1,97 @@
+.team-card{
+	padding: 0 rem(10px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&.active{
+		.team-card__name{
+			margin-bottom: 10px;
+			&::after{
+				border-bottom: 9px solid $red;
+				border-top: none;
+			}
+		}
+
+		.team-card__avatar{
+			@include tab {
+				max-height: 290px;
+				margin-bottom: rem(20px);
+			}
+		}
+
+		.team-card__body{
+			max-height: 100vh;
+		}
+	}
+}
+
+.team-card__avatar{
+	width: 220px;
+	max-height: 290px;
+	overflow: hidden;
+	margin-bottom: rem(25px);
+	transition-property: max-height;
+	transition-duration: .3s;
+	
+	@include tab {
+		order: 1;
+		max-height: 0;
+		margin-bottom: 0;
+	}
+}
+
+.team-card__body{
+	max-height: 0;
+	overflow: hidden;
+	text-align: center;
+	transition-property: max-height;
+	transition-duration: .3s;
+
+	@include tab {
+		order: 2;
+	}
+}
+
+.team-card__name{
+	font-size: 18px;
+	font-weight: 700;
+	color: $black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px;
+	cursor: pointer;
+	text-align: center;
+	transition: height 1.3s;
+
+	&:after{
+		content: "";
+		display: inline-block;
+		width: 0;
+		border: 6px solid transparent;
+		border-top: 9px solid $red;
+		border-bottom: none;
+		margin-left: rem(5px);
+	}
+
+	@include tab {
+		order: 0;
+		margin-bottom: 0;
+	}
+}
+
+.team-card__prof{
+	color: #000;
+	margin-bottom: 5px;
+	
+	@include tab {
+		font-weight: 700;
+	}
+}
+
+.team-card__desc{
+	color: $grey;
+	line-height: 1.15;
+}
+

@@ -1,0 +1,21 @@
+.colors-section{
+	background: url('./images/colors/woman.jpg') center center / cover no-repeat;
+	justify-content: flex-start;
+	padding: 0;
+	width: 100%;
+	overflow: hidden;
+	
+}
+
+.colors{
+	display: flex;
+	height: 100%;
+	justify-content: space-between;
+}
+
+.colors__title{
+	text-align: left;
+	padding-top: 115px;
+	padding-left: 84px;
+	flex: 1 0 30%;
+}

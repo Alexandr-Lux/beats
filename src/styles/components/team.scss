@@ -1,0 +1,25 @@
+.team__title{
+	margin-bottom: 53px;
+	@include tab {
+		margin-bottom: 33px;
+	}
+}
+
+.team__list{
+	display: flex;
+	justify-content: center;
+	margin: 0 -rem(10px);
+	@include tab {
+		flex-direction: column;
+	}
+}
+
+.team__item{
+	width: 25%;
+	margin-bottom: 20px;
+
+	@include tab {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+}

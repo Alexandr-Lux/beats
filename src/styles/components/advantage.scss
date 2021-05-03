@@ -1,0 +1,35 @@
+.advantage__list{
+	display: flex;
+	align-items: center;
+}
+
+.advantage__item{
+	display: flex;
+	align-items: center;
+	&:first-child{
+		.advantage__content{
+			background-image: url('./images/icons/ear.svg');
+		}
+	}
+
+	&:last-child{
+		.advantage__content{
+			background-image: url('./images/icons/plug.svg');
+		}
+	}
+}
+
+
+.advantage__icon{
+	margin-right: 11px;
+	width: 41px;
+	height: 41px;
+	fill: $black;
+}
+
+.advantage__content {
+	padding-left: 55px;
+	min-height: 41px;
+	max-width: 166px;
+	background: url("./images/icons/energy.svg") left center / 41px 41px no-repeat;
+}
