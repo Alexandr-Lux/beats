@@ -1,5 +1,5 @@
 const tabs = document.querySelectorAll('.tabs__text-block');
-const tabsList = document.querySelector('.tabs__list');
+const tabsList = document.querySelector('.tabs');
 const colorsTitle = document.querySelector('.colors__title');
 
 tabsList.addEventListener('click', (e) => {

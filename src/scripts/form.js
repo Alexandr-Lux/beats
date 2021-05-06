@@ -21,10 +21,10 @@ form.addEventListener('submit', e => {
 		xhr.send(JSON.stringify(data));
 		xhr.addEventListener('load', () => {
 			if (xhr.response.status) {
-				$('.modal_yes').css('display', 'flex');
+				$('.modal_yes').addClass('active');
 				body.style.overflow = 'hidden'
 			} else {
-				$('.modal_no').css('display', 'flex');
+				$('.modal_no').addClass('active');
 				body.style.overflow = 'hidden'
 			};
 		})
@@ -74,7 +74,7 @@ form.addEventListener('submit', e => {
 
 $('.modal__btn').on('click', e => {
 	e.preventDefault();
-	$('.modal').css('display', 'none');
+	$('.modal').removeClass('active');
 	body.style.overflow = 'auto'
 });
 

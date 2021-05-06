@@ -1,12 +1,20 @@
 .modal{
 	position: fixed;
-	z-index: 20;
+	z-index: $z-overlay;
 	top: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
 	background: rgba(0, 0, 0, 0.4);
-	display: none;
+	visibility: hidden;
+	opacity: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&.active {
+		visibility: visible;
+		opacity: 1;
+	}
 }
 
 .modal_no{
@@ -23,9 +31,11 @@
 	background: #fff;
 	padding: 37px 55px;
 	margin: auto;
+	width: 30%;
 }
 
 .modal__text {
 	margin-bottom: 20px;
 	font-size: 18px;
+	text-align: center;
 }

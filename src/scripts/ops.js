@@ -69,7 +69,6 @@ function handleTouchStart (e) {
 function handleTouchMove (e) {
 	yEnd = e.changedTouches[0].clientY
 	
-
 	if ( yEnd < yStart && canScroll && (Math.abs(yEnd - yStart) > 70) ) {
 		if ( scrollPosition < sections.length -1 ) {
 			scrollPosition++;
@@ -82,7 +81,9 @@ function handleTouchMove (e) {
 	
 	scrolling(scrollPosition)
 }
+window.addEventListener('touchmove', e => {
+	window.addEventListener('touchstart', handleTouchStart);
+	window.addEventListener('touchend', handleTouchMove);
+})
 
-window.addEventListener('touchstart', handleTouchStart, false);
-window.addEventListener('touchend', handleTouchMove, false);
 

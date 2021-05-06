@@ -16,6 +16,11 @@
 	}
 }
 
+.player__display {
+	max-width: 660px;
+	height: 100%;
+}
+
 .player__splash{
 	position: absolute;
 	top: 0;
@@ -44,14 +49,14 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0 17px;
+	padding: 0 24px 0 17px;
 
 	@include tab {
-		padding: 0 10px;
+		padding: 0 17px 0 10px;
 	}
 
 	@include mob {
-		padding: 0 5px;
+		padding: 0 12px 0 5px;
 	}
 }
 
@@ -75,7 +80,7 @@
 		margin-right: 20px;
 	}
 	@include mob {
-		width: 60%;
+		width: 65%;
 		margin-right: 15px;
 	}
 
@@ -117,16 +122,18 @@
 	flex: 1;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
 }
 
 .player__volume-icon{
 	width: 13px;
 	height: 16px;
 	background: url('./images/icons/volume.svg') center center / contain no-repeat;
-	margin-right: 25px;
+	margin-right: 15px;
 
 	@include tab {
-		margin-right: 15px;
+		margin-right: 10px;
+	}
+	@include mob {
+		margin-right: 5px;
 	}
 }
