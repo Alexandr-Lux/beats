@@ -2,7 +2,7 @@
 	background-color: #f5f5f5;
 	color: $black;
 	position: relative;
-	padding: rem(25px) 0;
+	padding: rem(25px) 0 rem(85px);
 	&:after{
 		content: url('./images/decor/Rectangle-45.png');
 		position: absolute;
@@ -10,6 +10,10 @@
 		right: 10%;
 		transform: translateY(50%);
 		z-index: 10;
+	}
+
+	@include tab {
+		padding: rem(25px) 0;
 	}
 }
 

@@ -8,4 +8,3 @@ teamArea.addEventListener('click', (e) => {
 		}
 	}
 });
-
