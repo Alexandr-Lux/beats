@@ -1524,7 +1524,7 @@ body {
   align-items: center;
   transition: background-color .3s; }
 
-.tabs__list {
+.tabs {
   display: flex;
   height: 100%;
   position: absolute;
