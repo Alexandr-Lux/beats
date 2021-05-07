@@ -1,4 +1,6 @@
 const form = document.querySelector('.form');
+const modal = document.querySelector('.modal');
+const modalText = document.querySelector('.modal__text');
 
 form.addEventListener('submit', e => {
 
@@ -20,12 +22,13 @@ form.addEventListener('submit', e => {
 		xhr.setRequestHeader('content-type', 'application/json');
 		xhr.send(JSON.stringify(data));
 		xhr.addEventListener('load', () => {
+			modal.classList.add('active');
 			if (xhr.response.status) {
-				$('.modal_yes').addClass('active');
-				body.style.overflow = 'hidden'
+				modalText.style.color = 'inherit';
+				modalText.textContent = 'Сообщение отправлено';
 			} else {
-				$('.modal_no').addClass('active');
-				body.style.overflow = 'hidden'
+				modalText.style.color = '#E01F3D';
+				modalText.textContent = 'Сообщение не отправлено, повторите запрос позже';
 			};
 		})
 	};
@@ -75,6 +78,5 @@ form.addEventListener('submit', e => {
 $('.modal__btn').on('click', e => {
 	e.preventDefault();
 	$('.modal').removeClass('active');
-	body.style.overflow = 'auto'
 });
 

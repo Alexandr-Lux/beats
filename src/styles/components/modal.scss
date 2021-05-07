@@ -17,12 +17,6 @@
 	}
 }
 
-.modal_no{
-	.modal__text{
-		color: $red;
-	}
-}
-
 .modal__container{
 	display: flex;
 	flex-direction: column;
@@ -32,6 +26,14 @@
 	padding: 37px 55px;
 	margin: auto;
 	width: 30%;
+
+	@include tab {
+		width: 50%;
+	}
+	@include mob {
+		width: 90%;
+		padding: 20px 30px;
+	}
 }
 
 .modal__text {

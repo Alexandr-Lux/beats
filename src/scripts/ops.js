@@ -3,8 +3,8 @@ const content = document.querySelector('.main-content');
 const dots = document.querySelectorAll('.fixed-menu__item');
 const links = document.querySelectorAll('[data-scroll-position]');
 let canScroll = true;
+let autoContent = true;
 let scrollPosition = 0;
-
 
 links.forEach( elem => {
 	elem.addEventListener('click', e => {
@@ -42,12 +42,18 @@ function scrolling (numSection) {
 
 window.addEventListener('wheel', e => {
 
-	if ( e.deltaY > 0 && canScroll ) {
-		if ( scrollPosition < sections.length -1 ) {
+	if (content.classList.contains('hidden')) {
+		autoContent = false;
+	} else {
+		autoContent = true;
+	}
+
+	if ( e.deltaY > 0 && canScroll  && autoContent) {
+		if ( scrollPosition < sections.length -1) {
 			scrollPosition++;
 		}
 	} else {
-		if ( scrollPosition > 0 && canScroll ) {
+		if ( scrollPosition > 0 && canScroll) {
 			scrollPosition--;
 		}
 	}
@@ -69,12 +75,12 @@ function handleTouchStart (e) {
 function handleTouchMove (e) {
 	yEnd = e.changedTouches[0].clientY
 	
-	if ( yEnd < yStart && canScroll && (Math.abs(yEnd - yStart) > 70) ) {
-		if ( scrollPosition < sections.length -1 ) {
+	if ( yEnd < yStart && canScroll && (Math.abs(yEnd - yStart) > 70)  && autoContent) {
+		if ( scrollPosition < sections.length -1) {
 			scrollPosition++;
 		}
 	} else {
-		if ( scrollPosition > 0 && canScroll && (Math.abs(yEnd - yStart) > 70) ) {
+		if ( scrollPosition > 0 && canScroll && (Math.abs(yEnd - yStart) > 70)) {
 			scrollPosition--;
 		}
 	}
@@ -82,6 +88,13 @@ function handleTouchMove (e) {
 	scrolling(scrollPosition)
 }
 window.addEventListener('touchmove', e => {
+
+	if (content.classList.contains('hidden')) {
+		autoContent = false;
+	} else {
+		autoContent = true;
+	}
+
 	window.addEventListener('touchstart', handleTouchStart);
 	window.addEventListener('touchend', handleTouchMove);
 })
