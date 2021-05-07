@@ -1,6 +1,7 @@
 const form = document.querySelector('.form');
 const modal = document.querySelector('.modal');
 const modalText = document.querySelector('.modal__text');
+const modalBtn = document.querySelector('.modal__btn');
 
 form.addEventListener('submit', e => {
 
@@ -74,9 +75,9 @@ form.addEventListener('submit', e => {
 	}
 });
 
-
-$('.modal__btn').on('click', e => {
+modalBtn.addEventListener('click', e => {
 	e.preventDefault();
-	$('.modal').removeClass('active');
-});
+	modal.classList.remove('active')
+})
+
 
