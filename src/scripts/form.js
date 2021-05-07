@@ -24,12 +24,11 @@ form.addEventListener('submit', e => {
 		xhr.send(JSON.stringify(data));
 		xhr.addEventListener('load', () => {
 			modal.classList.add('active');
+			modalText.textContent = xhr.response.message;
 			if (xhr.response.status) {
 				modalText.style.color = 'inherit';
-				modalText.textContent = 'Сообщение отправлено';
 			} else {
 				modalText.style.color = '#E01F3D';
-				modalText.textContent = 'Сообщение не отправлено, повторите запрос позже';
 			};
 		})
 	};
